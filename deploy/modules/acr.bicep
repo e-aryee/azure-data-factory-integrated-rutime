@@ -21,7 +21,7 @@ resource containerRegistry 'Microsoft.ContainerRegistry/registries@2021-06-01-pr
 // Build the container image.
 var containerImageName = 'win2019shir'
 var containerImageTag = 'v1'
-var dockerfileSourceGitRepository = 'https://github.com/e-aryee/images.git'
+var dockerfileSourceGitRepository = 'https://github.com/e-aryee/shir-image.git'
 resource buildTask 'Microsoft.ContainerRegistry/registries/taskRuns@2019-06-01-preview' = {
   parent: containerRegistry
   name: 'buildTask'
